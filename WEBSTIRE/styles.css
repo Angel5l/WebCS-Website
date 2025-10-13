@@ -1,0 +1,245 @@
+/*    
+Full Name: Zapanta, Angel Gabriel
+Section: CS-202
+Activity: Final Website
+Date: 09/28/25
+*/
+
+/*CSS Reset*/
+* {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Body*/
+body { 
+    background-color: #375240;
+}
+
+#Hero img {
+  display: block;
+  margin: auto;
+  height: auto;
+  min-width: 100vw;
+  max-width: 100%;
+}
+
+/*Header*/
+header {
+    position: -webkit-sticky;
+    position:   sticky;
+    top: 0;
+    background-color: #375240;
+    height: 190px;
+}
+
+header img {
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    max-width: 25%;
+}
+
+/*Navigation*/
+
+nav {
+    padding: 1%;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+nav li {
+    font-size: 1.5em;
+    font-family: "Mozilla Headline", sans-serif;
+    border-top: 4px double #fff;
+}
+
+nav li:first-child{
+    border-top: none;
+}
+
+nav li a {
+    display: block;
+    color: #fff;
+    padding: 0.5em 5em;
+    text-decoration: none;
+}
+
+/*Main*/
+main {
+    text-align: center;
+    clear: left;
+    background-color: #fff;
+    padding: 2%;
+    font-size:  1.25em;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.Description {
+    padding-bottom: 3em;
+}
+
+/*Footer*/
+footer {
+  font-size: 0.75em;
+  color: #fff;
+  text-align: center;
+  background-color: #375240;
+  border-style: double none;
+  border-width: 4px;
+  border-color: #fff;
+  padding: 1em 0;
+}
+
+footer p a {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*HOME*/
+.frame {
+    position: relative;
+    max-width: 40%;
+    margin: 2% auto;
+}
+
+.frame img {
+    max-width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.frame:hover {
+    opacity: 1;
+    box-shadow: 8px 8px 10px #808080;
+}
+
+.pic-text {
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    width:100%;
+    padding: 20px;
+    text-align: center;
+    font-family: Verdana, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.grid {
+        display: grid;
+        grid-gap: 8px;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: stretch;
+    }
+
+/* ============================================== */
+/* TABLET VIEW PORT */
+@media screen and (min-width: 630px), print {
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop {
+        display: none;
+    }
+
+/*HEADER*/
+    header {
+        position:static;
+        padding-bottom: 2%;
+    }
+
+/*NAV*/
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #fff;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+
+/*MAIN*/
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+}
+
+/* ============================================== */
+/* DESKTOP VIEW PORT */
+@media screen and (min-width: 1015px) {
+    .desktop {
+        display: block;
+    }
+
+/*HEADER*/
+    header {
+        width: 25%;
+        float: left;
+        padding-bottom: 0;
+    }
+
+    header img {
+    margin: auto;
+    padding-top: 1.7em;
+    max-width: 25%;
+    }
+
+/*NAV*/
+    nav {
+        float: right;
+        width: 70%;
+        margin: 4em 1em 0 0;
+    }
+
+    nav ul {
+        text-align: right;
+    }
+
+    nav li {
+        border: none;
+    }
+
+    nav li a:hover {
+        color: #f2f2f2;
+        background-color: #2E2924;
+        opacity: 80%;
+        border: 5px solid #615751;
+    }
+
+    nav li a {
+        padding: 0.5em 1em;
+    }
+
+    #Hero img {
+        min-width: 100%;
+        height: 20vw;
+        object-fit: cover;
+        object-position: 0 50%;
+    }
+
+/*MAIN*/
+    main {
+        clear: left;
+    }
+
+    main h1 {
+        font-size: 1.8em;
+    }
+}
