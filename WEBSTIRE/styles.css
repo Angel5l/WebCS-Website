@@ -2,7 +2,7 @@
     Full Name: Zapanta, Angel Gabriel
     Section: CS-202
     Activity: Final Website
-    Date: 10/08/2025
+    Date: 10/09/2025
 */
 
 /*CSS Reset*/
@@ -11,6 +11,18 @@
     border: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+h1 {
+    font-family: "Abril Fatface",'Times New Roman', Times, serif;;
+}
+
+h3, h4 {
+    font-family: "Andada Pro", 'Times New Roman', Times, serif;
+}
+
+p {
+    font-family: 'Alegreya', 'Times New Roman', Times, serif;
 }
 
 /*Body*/
@@ -56,7 +68,7 @@ nav ul {
 
 nav li {
     font-size: 1.5em;
-    font-family: "Mozilla Headline", sans-serif;
+    font-family: "Andada Pro", 'Times New Roman', Times, serif;
     border-top: 4px double #fff;
 }
 
@@ -370,5 +382,25 @@ footer p a {
     main h1 {
         font-size: 1.8em;
     }
+
+}
+
+/* ============================================== */
+/*PRINT*/
+@media print {
+
+    header {
+    margin-bottom: 5em;
+    }
+
+    nav {
+    margin-top: 5em;
+    }
+    
+    body {
+        background-color: #fff;
+        color: #000;
+    }
+
 
 }
